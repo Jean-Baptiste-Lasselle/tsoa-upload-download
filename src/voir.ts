@@ -1,5 +1,8 @@
 
-uploadImageFile )) { return callback(new Error(‘Only zip files are allowed!’), false) } callback(null, true) } // store at disk
+uploadImageFile () {
+  return callback(new Error(‘Only zip files are allowed!’), false) }
+   callback(null, true) } // store at disk
+
 
 ///
 ///
@@ -14,7 +17,8 @@ callback(null, true) } // store at disk
 
     const storage = multer.diskStorage({
       destination: (req, file, callback) => {callback(null, `${storePath}/`) },
-      filename: (req, file, callback) => { callback(null, fileName ? fileName : file.originalname) } }
+      filename: (req, file, callback) => { callback(null, fileName ? fileName : file.originalname) }
+      }
     )
     const upload = multer({ storage, fileFilter })
     const multerSingle = upload.single(requestField)
