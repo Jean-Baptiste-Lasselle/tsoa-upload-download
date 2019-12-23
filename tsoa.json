@@ -1,12 +1,33 @@
 {
   "swagger": {
+
     "basePath": "/api/v1",
     "entryFile": "./src/main.ts",
     "specVersion": 3,
     "outputDirectory": "./api/dist",
     "controllerPathGlobs": [
       "./src/controllers/**/*controller.ts"
-    ]
+    ],
+    "specMerging": "recursive",
+    "spec": {
+      "paths": {
+        "/files/uploadFile": {
+          "post": {
+            "consumes": [
+              "multipart/form-data"
+            ],
+            "parameters": [
+              {
+                "in": "formData",
+                "name": "imageFile",
+                "required": true,
+                "type": "file"
+              }
+            ]
+          }
+        }
+      }
+    }
   },
   "routes": {
     "basePath": "/api/v1",
