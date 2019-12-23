@@ -7,7 +7,7 @@ Simple TypeScript-based Express.js application template
 You can try that on [Katacoda](https://www.katacoda.com/courses/nodejs/playground)
 
 ```bash
-export SSH_URI_REPO_STARTER_TSOA=https://gitlab.com/second-bureau/pegasus/miroir-simple-express
+export SSH_URI_REPO_STARTER_TSOA=https://github.com/Jean-Baptiste-Lasselle/tsoa-upload-download
 
 mkdir monapi/
 git clone $SSH_URI_REPO_STARTER_TSOA monapi/
