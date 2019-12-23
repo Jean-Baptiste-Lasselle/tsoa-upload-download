@@ -4,7 +4,9 @@ Simple TypeScript-based Express.js application template
 
 ## Reloaded build n Run
 
-```base
+You can try that on [Katacoda](https://www.katacoda.com/courses/nodejs/playground)
+
+```bash
 export SSH_URI_REPO_STARTER_TSOA=https://gitlab.com/second-bureau/pegasus/miroir-simple-express
 
 mkdir monapi/
@@ -15,14 +17,16 @@ cd monapi/
 # globale après avoir vérifié que cela ne
 # provoque pas d'erreur(s)
 #
+
 npm install -g tsoa
 npm install --save-dev tsoa
+npm install --save-dev @types/node
+npm install
+tsoa routes
 
-npm install @types/node
 npm run build
 npm run server
 ```
-
 ## Install
 To install the application, do the following after cloning the repository:
 ```bash
