@@ -4,7 +4,7 @@
     "basePath": "/api/v1",
     "entryFile": "./src/main.ts",
     "specVersion": 3,
-    "outputDirectory": "./dist",
+    "outputDirectory": "./api/dist",
     "controllerPathGlobs": [
       "./src/controllers/**/*controller.ts"
     ],
