@@ -20,6 +20,8 @@ cd monapi/
 
 npm install -g tsoa
 npm install --save-dev tsoa
+npm install --save-dev multer
+npm install --save multer
 npm install --save-dev @types/node
 npm install
 tsoa routes
