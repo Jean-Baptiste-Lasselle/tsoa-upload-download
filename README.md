@@ -70,6 +70,6 @@ export CHEMIN_FICHIER_IMAGE=/home/jibl/AVATAR_SITE_WEB_HUGO/business-374-127189.
 curl \
   -X POST \
   -F "filecomment=This is an image file" \
-  -F "image=@$CHEMIN" \
+  -F "image=@$CHEMIN_FICHIER_IMAGE" \
   http://$KATACODA_HOST/api/v1/files/uploadFile
 ```
