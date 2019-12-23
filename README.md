@@ -23,7 +23,7 @@ npm install --save-dev tsoa
 npm install --save-dev @types/node
 npm install
 tsoa routes
-
+tsoa swagger
 npm run build
 npm run server
 ```
