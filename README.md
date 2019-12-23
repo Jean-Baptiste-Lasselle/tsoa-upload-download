@@ -56,3 +56,17 @@ $ npm run lint
 is used so tha twe can tet uploading an image
 
 https://github.com/expressjs/multer
+
+
+## curl tests attachments
+
+* requête de test :
+```bash
+export KATACODA_HOST=2886795279-3000-elsy06.environments.katacoda.com
+export CHEMIN_FICHIER_IMAGE=/home/jibl/AVATAR_SITE_WEB_HUGO/business-374-127189.png
+curl \
+  -X POST \
+  -F "filecomment=This is an image file" \
+  -F "image=@$CHEMIN" \
+  http://$KATACODA_HOST/api/v1/files/uploadFile
+```
